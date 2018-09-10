@@ -1,0 +1,10 @@
+In the Dessert rspec test the test 'cake' and 'apple' check to make sure the methods in the class are working as they are supposed to. The test 'can set' is 
+making sure the getters and setters can be accessed and return the right value. The first test I added is 'prevents non-word characters in names' which makes 
+sure a dessert name can not have non-word characters in it or have numbers in it. The second test I added is 'prevents bad inputs' which checks to make sure
+the exceptions are raised if the name value upon creation it empty or if amount of calories is set below zero.
+
+In the JellyBean rspec test 'when non-licorice' cheks to make sure that the modifed delicious? method remains the same when flavor is not set to licorice. The
+'when licorice' test makes sure the modified delicious? mehtod returns false when the flavor is licorice. Then I added a 'can set' test to make sure the flavor
+getter and setter were working properly. I also added the test 'prevents non-word characters in flavor names' which makes sure the flavor can not have non-word 
+characters in it or have numbers in it. I put the 'prevents bad inputs' test in as well which checks to make sure the exceptions are raised if the flavor value 
+upon creation it empty.

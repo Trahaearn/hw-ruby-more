@@ -1,0 +1,4 @@
+In the rspec test rock_paper_scissors_spec.rb the test cover each scenario to make sure the correct results are returned. It also check and makes sure the 
+correct results are returned for a tie. It makes sure that an exception is raised when illegal characters are used. Here I added a two more checks to make
+sure all illegal characters where taken care of including words with the letters in them. The final test makes sure that the tournament is returning the correct
+winner once it is fully finished.

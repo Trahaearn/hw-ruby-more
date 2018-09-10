@@ -1,0 +1,9 @@
+The rspec test 'palindrome detection' checks to make sure it gets the correct values back for any string, string with uppercase/lowercase values, makes sure it
+non-word characters affect the result, and I added in a test to make sure it works with all word characters including numbers and the underscore symbol.
+
+The rspec test 'word count' checks that it gets returned a hashed value, makes sure it gets the correct count for a string, makes sure it returns the correct
+results by ignoring punctuation marks, checks correct result from an empty pass, makes sure it ignores whitespace and whitespace embedding, and I added a test 
+to make sure it ignores non-word characters.
+
+The rspec test 'anagram grouping' makes sure it works with an empty string, makes sure it works with a single character returning some value, and checks to make
+sure the groups were created correctly.

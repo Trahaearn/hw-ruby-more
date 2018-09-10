@@ -1,7 +1,7 @@
 require 'rock_paper_scissors'
 require 'byebug'
 
-describe RockPaperScissors, :pending => true do
+describe RockPaperScissors do
   before(:each) do
     @rock = ['Armando','R'] ; @paper = ['Dave','P'] ; @scissors = ['Sam','S']
   end
@@ -21,6 +21,8 @@ describe RockPaperScissors, :pending => true do
   end
   it "should raise NoSuchStrategyError if strategy isn't R, P, or S" do
     expect(lambda { RockPaperScissors.winner(@rock, ['Dave', 'w']) }).to raise_error(RockPaperScissors::NoSuchStrategyError, "Strategy must be one of R,P,S")
+    expect(lambda { RockPaperScissors.winner(@rock, ['Dave', 'resp']) }).to raise_error(RockPaperScissors::NoSuchStrategyError, "Strategy must be one of R,P,S")
+    expect(lambda { RockPaperScissors.winner(@rock, ['Dave', '#40784r']) }).to raise_error(RockPaperScissors::NoSuchStrategyError, "Strategy must be one of R,P,S")
   end
   describe 'tournament' do
     it 'base case' do
